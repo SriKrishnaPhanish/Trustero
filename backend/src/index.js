@@ -11,7 +11,7 @@ app.use(
   })
 );
 app.use(express.json());
-
+app.options("*".cors());
 app.use("/api/v1/company", companyRouter);
 app.use("/api/v1/testimonials", testimonialRouter);
 
