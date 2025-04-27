@@ -7,7 +7,7 @@ const PORT = 3000;
 const app = express();
 app.use(
   cors({
-    origin: "https://chopurl.onrender.com",
+    origin: "https://trustero.onrender.com/",
   })
 );
 app.use(express.json());
