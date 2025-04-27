@@ -10,8 +10,9 @@ app.use(
     origin: "https://trustero.onrender.com/",
   })
 );
+app.options("/api/v1/company", cors());
+app.options("/api/v1/testimonials", cors());
 app.use(express.json());
-app.options("*", cors());
 app.use("/api/v1/company", companyRouter);
 app.use("/api/v1/testimonials", testimonialRouter);
 
